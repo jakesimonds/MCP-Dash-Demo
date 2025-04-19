@@ -1,3 +1,59 @@
+{
+  "mcpServers": {
+    "desktop": {
+      "command": "/Users/jakesimonds/Documents/fastmcp/.venv/bin/uv",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli],path,fastmcp,pillow,opencv-python,/Users/jakesimonds/Documents/mcp-python-demo/bleak-dash",
+        "mcp",
+        "run",
+        "/Users/jakesimonds/Documents/fastmcp/examples/desktop.py"
+      ]
+    }
+  }
+}
+
+
+
+{
+  "mcpServers": {
+    "desktop": {
+      "command": "/Users/jakesimonds/Documents/fastmcp/.venv/bin/uv",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli],path,fastmcp,pillow,opencv-python,/Users/jakesimonds/Documents/fastmcp/examples/bleak-dash",
+        "mcp",
+        "run",
+        "/Users/jakesimonds/Documents/fastmcp/examples/desktop.py"
+      ]
+    }
+  }
+}
+
+
+
+
+{
+  "mcpServers": {
+    "desktop": {
+      "command": "/Users/jakesimonds/Documents/fastmcp/.venv/bin/uv",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli],path,fastmcp,pillow,opencv-python",
+        "mcp",
+        "run",
+        "/Users/jakesimonds/Documents/fastmcp/examples/desktop.py"
+      ]
+    }
+  }
+}
+
+
+
+
 <div align="center">
 
 <!-- omit in toc -->
