@@ -8,6 +8,12 @@ from pathlib import Path
 
 from fastmcp.server import FastMCP
 
+import io
+
+import cv2
+from fastmcp import FastMCP, Image
+from PIL import Image as PILImage
+
 # Create server
 mcp = FastMCP("Demo")
 
@@ -19,7 +25,23 @@ def desktop() -> list[str]:
     return [str(f) for f in desktop.iterdir()]
 
 
+
+@mcp.tool()
+def get_image() -> list[Image]:
+    # these works
+    img1 = Image(path="/Users/jakesimonds/Documents/fastmcp/examples/photo/latest_photo.jpg")
+
+
+    # buffer = io.BytesIO()
+    # PILImage.open("photo/test.jpg").save(buffer, format="PNG")
+    # img4 = Image(data=buffer.getvalue(), format="png")
+
+
+    # success
+    return img1
+
+
 @mcp.tool()
 def add(a: int, b: int) -> int:
     """Add two numbers"""
-    return a + b
+    return a + b + 100
